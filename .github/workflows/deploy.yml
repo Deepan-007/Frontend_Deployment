@@ -25,7 +25,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t aathideepan/frontend_deploy_cicd:${{ github.sha }} .
-          docker tag atomcodex/aws-cicd:${{ github.sha }} aathideepan/frontend_deploy_cicd:latest
+          docker tag aathideepan/frontend_deploy_cicd:${{ github.sha }} aathideepan/frontend_deploy_cicd:latest
 
       - name: Push Docker Images
         run: |
